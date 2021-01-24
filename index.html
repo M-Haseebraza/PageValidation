@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bdy">
+        <form class="main" action="">
+            <h1 style="color: honeydew; margin-left: 50px; text-decoration: underline;">Registration Form</h1>
+            <input id="b1" class="input-box" onFocusOut="valid()" placeholder="User ID" type="text" required>
+            <span id="userid"></span>
+            <input id="b2" class="input-box" onFocusOut="valpas()" placeholder="Password" type="password" required>
+            <span id="userpas"></span>
+            <input id="b3" class="input-box" onFocusOut="valnam()" placeholder="Name" type="text" required>
+            <span id="usernam"></span><br>
+            Male<input name="gendar" id="b8" class="rado" type="radio" required>Female<input id="b9" name="gendar" class="rado"
+                type="radio" required><br>
+                <span id="usergen"></span>
+            <input id="b4" class="input-box" placeholder="Address" type="text" onFocusOut="valadd()">
+            <select class="input-box" name="" id="count">
+                <option  value="">Select Country</option>
+                <option value="In">India</option>
+                <option value="indo">Indonesia</option>
+                <option value="pak">Pakistan</option>
+            </select>
+            <span id="usercont"></span>
+            <input id="b6" placeholder="Zipcode" onFocusOut="valzip()" class="input-box" type="text">
+            <span id="userzip"></span>
+            <input id="b7" placeholder="Email" onFocusOut="valem()" class="input-box" type="email">
+            <span id="userem"></span> <br>
+            <input name="lang" id="" checked class="rado" type="checkbox">English<input name="lang" class="rado"
+                type="checkbox">Non English
+            <button class="btn" onclick="val()" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
